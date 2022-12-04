@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS countries ( 
+COUNTRY_ID varchar(2),
+COUNTRY_NAME varchar(40)
+CHECK(COUNTRY_NAME IN('Italy','India','China')) ,
+REGION_ID decimal(10,0)
+);
+SELECT * FROM countries
+
+--second Q solution
+INSERT INTO countries (COUNTRY_ID,COUNTRY_NAME,REGION_ID) VALUES ('C1','INDIA','001');
+CREATE TABLE IF NOT  EXISTS COUNTRY_NEW
+AS SELECT *FROM COUNTRIES
+
+SELECT * FROM countries
+
+
+
+
+
+
